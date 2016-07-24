@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Erro 404 - Página não encontrada | Biamar</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <link rel="stylesheet" type="text/css" href="http://biamar.com.br/_assets/css/main.min.css?d=1" />
+        <link rel="stylesheet" type="text/css" href="http://biamar.com.br/_assets/js/fancybox/jquery.fancybox.css" />
+
+    <script type="text/javascript">var site_url = 'http://biamar.com.br/'; </script>
+    <script src="https://use.typekit.net/ope1kkf.js"></script>
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/11e66c46-f297-4104-b7e2-cd66538966c4.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    
+    <meta name="author" content="Deen - Agência de Marketing Digital - http://www.deen.com.br"/>
+    <meta name="description" content="Nascida em 1986, a Biamar é hoje uma marca conceituada no mercado de malhas e tricot do Brasil, criando coleções alinhadas com as tendências mundiais de moda. Focada em consumidores de alma jovem e estilo próprio, a Biamar desenvolve produtos de alta qualidade, utilizando matérias-primas selecionadas, como fios com fibras naturais, algodão, alpacas, modal, lãs, viscoses, linhos e mohair."/>
+	<meta name="keywords" content="malharia, biamar, malhas, confecção"/>
+    <link rel="shortcut icon" type="image/ico" href="http://biamar.com.br/_assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="http://biamar.com.br/_assets/images/favicon_big.png"/>
+    <meta property="og:title" content="Erro 404 - Página não encontrada | Biamar"/> 
+    <meta property="og:image" content=""/> 
+    <meta property="og:url" content=""/> 
+</head>
+<body>
+
+    <div id="outdated">
+        <h6>Seu navegador está desatualizado!</h6>
+        <!-- <p>Atualize o seu navegador para uma melhor visualização do site. <a id="btnUpdate" target="_blank" href="http://outdatedbrowser.com/">Atualizar agora!</a></p> -->
+        <p>Atualize o seu navegador para uma melhor visualização do site. <a id="btnUpdate" target="_blank" href="https://www.google.com/chrome/browser/">Atualizar agora!</a></p>
+        <p id="btnClose"><a href="#">X</a></p>
+    </div>
+<div class="loader_site">
+    <img src="http://biamar.com.br/_assets/images/logo_loader.png" class="logo" alt="Biamar">
+</div>
+<div class="m-scene fade" id="main">
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="http://biamar.com.br/">Home</a></li>
+                <li><a href="http://biamar.com.br/colecao" class="colecao_link">Coleção</a></li>
+                <li><a href="http://biamar.com.br/cenas" class="cenas_link">Cenas</a></li>
+                <li><a href="http://biamar.com.br/marca" class="marca_link">A marca</a></li>
+                <li><a href="http://biamar.com.br/contato"  class="contato_link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+<div id="err404" class="container">
+	<h2>Ops!</h2>
+	A página procurada não foi encontrada :(
+</div>
+
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29913817-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	<script src="http://biamar.com.br/_assets/js/all.js?d=9" type="text/javascript"></script>
+</body>
+</html>
