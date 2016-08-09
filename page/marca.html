@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/marca.css" />
+	</head>
+
+	<body>
+		<!--描述：头部-->
+		<div id="wrap">
+
+			<div class="loadding"></div>
+			<img src="../img/logo_loader.png" class="wrapimg" />
+		</div>
+		<!--内容-->
+		<div id="main">
+			<!--header-->
+			<header id="header">
+				<nav>
+					<ul>
+						<li>
+							<a href="page/home.html">Home</a>
+						</li>
+						<li>
+							<a href="http://biamar.com.br/colecao" class="colecao_link">Coleção</a>
+						</li>
+						<li>
+							<a href="cenas.html" class="cenas_link">Cenas</a>
+						</li>
+						<li>
+							<a href="marca.html" class="marca_link">A marca</a>
+						</li>
+						<li>
+							<a href="../index.html" class="contato_link">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!--内容-->
+			<div>
+				<section id="select">
+					<a href="###" id="logo"></a>
+					<div class="seleContent">
+						<div class="left"></div>
+						<div class="right">
+							<div class="text">
+								<p>Nascida em 1986, a Biamar é hoje uma marca conceituada no mercado de malhas e tricot do Brasil, criando coleções alinhadas com as tendências mundiais de moda. Focada em consumidores de alma jovem e estilo próprio, a Biamar desenvolve produtos de alta qualidade, utilizando matérias-primas selecionadas, como fios com fibras naturais, algodão, alpacas, modal, lãs, viscoses, linhos e mohair. O mix diversificado de modelos apresentado a cada coleção - marca registrada da Biamar - garante o diferencial que agrada a cada temporada o exigente mercado consumidor.
+									<br> Com 30 anos de mercado, a Biamar está constantemente investindo em novas tecnologias e matérias-primas para oferecer produtos diferenciados para os seus consumidores. Em sua fábrica com mais de 7.500 metros quadrados de área construída em Farroupilha, no Rio Grande do Sul, a Biamar oferece uma infra-estrutura planejada para atender lojistas com todo conforto e o máximo de praticidade e agilidade.
+									<br> Apostando no sistema de pronta-entrega, a Biamar oferece aos lojistas espaço próprio com mais de 2500m2. A marca conta ainda com uma equipe de colaboradores preparados para atender com qualidade a demanda atacadista de todo o Sul do país. A fim de fidelizar os seus clientes, tornando-os verdadeiros parceiros da marca, a Biamar oferece as melhores condições de pagamento e negociação, além de um estoque sempre atualizado de malhas e tricot a disposição.</p>
+							</div>
+							<div class="video">
+								<div class="content">
+									<button class="btnVideo"></button>
+								</div>
+							</div>
+							<div class="imgWrap">
+								<div class="img_header">
+									<img src="../img/biamar_30.png"  id="bia1">
+									<img src="../img/biamar_30.png"  id="bia2">
+									<img src="../img/arrow_biamar.png"  class="line">
+								</div>
+								<div class="img_bottom">
+									<img src="../img/img_marca.jpg" >
+								</div>
+							</div>
+							<img src="../img/img_marca2.jpg" class="imgWright"/>
+						</div>
+						
+					</div>
+				</section>
+			</div>
+			<div class="video_wrap">
+				<div class="marca">
+					<video class="video_player" src="../img/marce.mp4" poster="../img/marce.mp4" preload="auto"  controls="controls" loop="" width="100%" height="100%" style="z-index: 9999;">
+					</video>
+					</video>
+					<button class="action action_close"></button>
+				</div>
+			</div>
+		</div>
+
+		<script src="../js/loadding.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var header = document.getElementById("header"); //底部导航
+			var selet = document.getElementById("select");
+			var btnVideo = selet.getElementsByClassName("btnVideo")[0];
+			var videowrap = document.getElementsByClassName("video_wrap")[0];
+			var videoplayer = document.getElementsByClassName("video_player")[0];
+			var actionclose = videowrap.getElementsByClassName("action_close")[0];
+
+			//初始动画
+			loadding(header);
+			//播放视频
+			btnVideo.onclick = function(){
+				videoplayer.play();
+				selet.style.display = "none";
+				actionclose.style.display = "block";
+				videoplayer.autoplay = "autoplay";
+				videowrap.style.display = "block";
+			
+			}
+			actionclose.onclick = function(){
+				videoplayer.pause();//暂停
+				videowrap.style.display = "none";
+				selet.style.display = "block";
+				actionclose.style.display = "none";
+			}
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,122 @@
+body{
+	background: #262626;;
+}
+#main {
+	min-height: 1500px;
+	width: 100%;
+	position: relative;
+	
+}
+
+#header {
+	position: fixed;
+	bottom: 30px;
+	width: 100%;
+	height: 50px;
+	z-index: 2;
+	opacity: .5;
+	text-align: center;
+	display: none;
+	transition: opacity 1s;
+}
+
+#header:hover {
+	opacity: 1
+}
+
+#header:after {
+	width: 100%;
+	height: 300px;
+	/*background: url(../img/bg_menu.png) center bottom/cover no-repeat;*/
+	/**cover背景图完整的显示在页面中**/
+	opacity: 1;
+	z-index: -1;
+	/*pointer-events: none;*/
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	content: " ";
+	/**撑开容器**/
+
+}
+
+#header nav {
+	bottom: 0;
+	position: relative;
+}
+
+#header nav ul li {
+	display: inline-block;
+	padding-right: 10%;
+	font-weight: 400;
+	padding-bottom: 20px;
+	border-bottom: 2px dotted #fff;
+	position: relative;
+	font-size: 13px;
+}
+
+#header nav ul li:after {
+	bottom: -2px;
+	width: 22px;
+	height: 2px;
+	background-color: #b8aa4e;
+	position: absolute;
+	left: 0;
+	content: "";
+}
+#select{
+	background: url(../img/bg_colecao.jpg) center center/cover no-repeat;
+	min-height: 1200px;
+	overflow: hidden;
+	width: 100%;
+	padding-bottom: 1px;
+}
+#select a {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: url(../img/logo_small.png) center center no-repeat;
+	width: 52px;
+	height: 52px;
+}
+#select .contato1 {
+	position: absolute;
+	height: 210px;
+	top: 200px;
+	left: 0;
+	right: 0;
+}
+
+#select .contato1 .contato {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#select .contato1 .shan {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	transform: translateY(-60%);
+	opacity: 0.9;
+}
+
+#select .contato1:hover .line {
+	-webkit-transform: translate(0, 0) rotate(180deg);
+	transition: all .9s cubic-bezier(.17, .86, .73, 1);
+}
+
+#select .contato1 .line {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	opacity: 1;
+}

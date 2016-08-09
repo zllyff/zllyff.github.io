@@ -1,0 +1,266 @@
+
+
+#main {
+	background: url(../img/gdj36.jpg) center top no-repeat;
+	min-height: 1200px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#header {
+	position: fixed;
+	bottom: 30px;
+	width: 100%;
+	height: 50px;
+	z-index: 2;
+	opacity: .5;
+	text-align: center;
+	display: none;
+	transition: opacity 1s;
+}
+
+#header:hover {
+	opacity: 1
+}
+
+#header:after {
+	width: 100%;
+	height: 350px;
+	background: url(../img/bg_menu.png) center bottom/cover no-repeat;
+	/**cover背景图完整的显示在页面中**/
+	opacity: 1;
+	z-index: -1;
+	/*pointer-events: none;*/
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	content: "";
+	/**撑开容器**/
+}
+
+#header nav {
+	bottom: 0;
+	position: relative;
+}
+
+#header nav ul li {
+	display: inline-block;
+	padding-right: 10%;
+	font-weight: 400;
+	padding-bottom: 20px;
+	border-bottom: 2px dotted #fff;
+	position: relative;
+	font-size: 13px;
+}
+
+#header nav ul li:after {
+	bottom: -2px;
+	width: 22px;
+	height: 2px;
+	background-color: #b8aa4e;
+	position: absolute;
+	left: 0;
+	content: "";
+
+}
+
+#select a {
+	position: absolute;
+	top: 120px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: url(../img/logo_small.png) center center no-repeat;
+	width: 52px;
+	height: 52px;
+}
+
+#select .contato1 {
+	position: absolute;
+	height: 210px;
+	top: 200px;
+	left: 0;
+	right: 0;
+}
+
+#select .contato1 .contato {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#select .contato1 .shan {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	transform: translateY(-60%);
+	opacity: 0.9;
+}
+
+#select .contato1:hover .line {
+	-webkit-transform: translate(0, 0) rotate(180deg);
+	transition: all .9s cubic-bezier(.17, .86, .73, 1);
+}
+
+#select .contato1 .line {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	opacity: 1;
+}
+
+#info {
+	width: 80%;
+	margin: 480px auto;
+	font-size: 0;
+	position: relative;
+}
+
+#info .item {
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #fff;
+	position: relative;
+	height: 80px;
+}
+
+#info .small {
+	width: 31%;
+	margin-right: 16px;
+}
+
+#info label {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 32px;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	left: 0;
+}
+
+#info input,
+#info textarea {
+	position: absolute;
+	bottom: 10px;
+	border: 0;
+	outline: 0;
+	font-size: 35px;
+	width: 100%;
+	background: 0 0;
+	height: 40px;
+	font-weight: 400;
+	left: 0;
+	color: #fff;
+}
+
+#info .send {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -310px;
+	width: 165px;
+	height: 165px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+
+#info .send:hover img {
+	-webkit-transform: translate(-50%, -50%) rotate(360deg);
+	transition: all .6s cubic-bezier(.17, .86, .73, 1);
+}
+
+#info .send img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%) rotate(0);
+	-webkit-transition: all .6s cubic-bezier(.17, .86, .73, 1);
+}
+
+#info .send span {
+	position: absolute;
+	top: 42%;
+	left: 26%;
+}
+
+#message {
+	width: 80%;
+	height: 200px;
+	background: gainsboro;
+	margin: auto auto 60px;
+	box-shadow: 0px 0px 100px 15px rgba(4, 5, 1, .38);
+	position: relative;
+	background: url(../img/bg_rodape.png) left center/cover no-repeat #fff;
+}
+
+#message ul {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+#message ul li {
+	float: left;
+	width: calc(100%/3);
+	height: 100%;
+	position: relative;
+	padding: 15px;
+	text-align: center;
+	border-right: 1px solid gainsboro;
+}
+
+#message ul li h1:nth-child(1) {
+	line-height: 30px;
+	border-bottom: 1px solid gainsboro;
+}
+
+#message ul li h1 {
+	float: left;
+	vertical-align: top;
+	width: 100%;
+	height: 50%;
+	font-size: 19px;
+	color: #afae9e;
+	margin: 0;
+	line-height: 80px;
+}
+
+#message ul li h1 span {
+	color: gray;
+}
+
+#message ul li:nth-child(3) {
+	border: 0;
+}
+
+#message ul li:nth-child(3) h1 {
+	margin-top: 40px;
+	border: 0;
+	width: 30px;
+	float: left;
+}
+
+#message ul li:nth-child(3) p {
+	margin-top: 25px;
+	float: right;
+	width: 200px;
+	line-height: 25px;
+	color: #88877a;
+	text-align: left;
+}

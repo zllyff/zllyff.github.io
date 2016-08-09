@@ -1,0 +1,245 @@
+#main {
+	min-height: 1500px;
+	width: 100%;
+	position: relative;
+	
+}
+
+#header {
+	position: fixed;
+	bottom: 30px;
+	width: 100%;
+	height: 50px;
+	z-index: 999;
+	opacity: .5;
+	text-align: center;
+	display: none;
+	transition: opacity 1s;
+}
+
+#header:hover {
+	opacity: 1
+}
+
+#header:after {
+	width: 100%;
+	height: 300px;
+	/*background: url(../img/bg_menu.png) center bottom/cover no-repeat;*/
+	/**cover背景图完整的显示在页面中**/
+	opacity: 1;
+	z-index: -1;
+	/*pointer-events: none;*/
+	position: absolute;
+	left: 0;
+	/*bottom: -30px;*/
+	content: "";
+	/**撑开容器**/
+
+
+}
+
+#header nav {
+	bottom: 0;
+	position: relative;
+}
+
+#header nav ul li {
+	display: inline-block;
+	padding-right: 10%;
+	font-weight: 400;
+	padding-bottom: 20px;
+	border-bottom: 2px dotted #fff;
+	position: relative;
+	font-size: 13px;
+}
+
+#header nav ul li:after {
+	bottom: -2px;
+	width: 22px;
+	height: 2px;
+	background-color: #b8aa4e;
+	position: absolute;
+	left: 0;
+	content: "";
+}
+#select{
+	background: url(../img/bg_colecao.jpg) center top/cover no-repeat;
+	padding-bottom: 1px;
+}
+#select #logo {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: url(../img/logo_small.png) center center no-repeat;
+	width: 52px;
+	height: 52px;
+}
+#select .seleContent{
+	width: 100%;
+	padding-top: 350px;
+	margin-bottom: 260px;
+	font-size: 0;
+}
+#select .left,#select .right{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+}
+#select .right .text{
+	width: 100%;
+	background: url(../img/a_marca_bg_txt.jpg) center center/cover no-repeat;
+	padding: 75px;
+	position: relative;
+	text-align: center;
+	box-shadow: 2px 2px 50px 5px black;
+}
+
+#select .right .text p{
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    color: rgba(255,255,255,.3);
+    text-align: left;
+    font-weight: bold;
+}
+#select .right .video{
+	width: 100%;
+	height: 530px;
+	z-index: 2;
+	position: relative;
+	background: url(../img/gdj35.jpg) center center/cover no-repeat;
+	box-shadow: 2px 2px 50px 5px black;
+}
+#select .right .video .content{
+	position: relative;
+	height: 100%;
+}
+#select .right .video .content button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 84px;
+	width: 84px;
+	background: url(../img/gdj17.png) center center/cover no-repeat;
+	border: 0;
+	outline: none;
+}
+#select .right .imgWrap{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	transform: translateX(-100%);
+	width: 60%;
+	z-index: 2;
+}
+#select .right .imgWrap .img_header{
+	position: relative;	
+	height: 520px;
+}
+#select .right .imgWrap .img_header:after{
+	position: absolute;
+	width: 20px;
+	height: 2px;
+	bottom: 50px;
+	transform: translateY(50px);
+	right: 50%;
+	background: grey;
+	content: '';
+	bottom: 50px;
+	
+}
+#select .right .imgWrap .img_header img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#select .right .imgWrap .img_header  #bia1{
+	opacity: 1;
+}
+
+#select .right .imgWrap .img_header  #bia2{
+	opacity: 0.7;
+}
+
+#select .right .imgWrap .img_header .line{
+	width: 80%;
+	margin: auto;
+}
+
+#select .right .imgWrap .img_header #bia1{
+	animation: mymove1 2s infinite ease;
+}
+
+@keyframes mymove1{
+	0%{width:205px;height:206px;}	
+	25%{width: 227px;height: 229px;}
+	100%{width:205px;height:206px;}
+}
+
+#select .right .imgWrap .img_header #bia2{
+	animation: mymove2 2s infinite ease;
+}
+
+@keyframes mymove2{
+	0%{width:217px;height:219px;opacity: 0.2;}	
+	25%{width: 300px;height: 301px;opacity: 0;}
+	100%{width: 217px;height: 219px;opacity: 0;}
+}
+
+#select .right .imgWrap #bia2{
+	
+}
+
+#select .right .imgWrap .img_bottom{
+	position: absolute;
+	height: 1000px;
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 2px 2px 50px 5px black;
+}
+
+#select .right .imgWrap .img_bottom img{
+	margin-left: -25%;
+	border: 0;
+}
+
+#select .right .imgWright{
+    position: absolute;
+    left: -100%;
+    width: 40%;
+    bottom: 560px;
+    top: 520px;
+}
+
+#main .video_wrap{
+	position: fixed;
+	left: 0;
+	right: 0;
+	
+}
+#main .video_wrap video{
+	width: 100%;
+}
+
+#main .video_wrap .action{
+	line-height: 1;
+    position: absolute!important;
+    z-index: 1000;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: url(../img/pause.png) center center/contain no-repeat;
+    outline: none;
+    border: 0;
+}
+
+
+

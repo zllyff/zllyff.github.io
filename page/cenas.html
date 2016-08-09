@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/cenas.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+	</head>
+	<body >
+		<!--描述：头部-->
+		<div id="wrap">
+
+			<div class="loadding"></div>
+			<img src="../img/logo_loader.png" class="wrapimg" />
+		</div>
+		
+		<!--描述：主体-->
+		<div id="main">
+			<!--header-->
+			<header id="header">
+				<nav>
+					<ul>
+						<li>
+							<a href="page/home.html">Home</a>
+						</li>
+						<li>
+							<a href="http://biamar.com.br/colecao" class="colecao_link">Coleção</a>
+						</li>
+						<li>
+							<a href="cenas.html" class="cenas_link">Cenas</a>
+						</li>
+						<li>
+							<a href="marca.html" class="marca_link">A marca</a>
+						</li>
+						<li> nz
+							<a href="../index.html" class="contato_link">Contato</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!--select-->
+			<div id="select">
+				<a href="javascript:;" id="logo"></a>
+				<div class="contato1">
+					<img src="../img/play.png" class="line" />
+				</div>
+			</div>
+			<!--video-->
+			<div id="video_wrap">
+				<div class="video_inner">
+					<video class="video_player" src="../img/biamar_colecao_2016.mp4" poster="../img/biamar_colecao_2016.mp4" preload="auto" controls="controls" loop="loop" width="100%" height="100%" style="z-index: 9999;">
+					</video>
+					<button class="action action_close"></button>
+				</div>
+			</div>
+			
+
+		</div>
+		
+		
+		
+		
+		
+		
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/loadding.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var header = document.getElementById("header"); //底部导航
+			var main = document.getElementById("main");
+			var selet = document.getElementById("select");
+			var btnVideo = selet.getElementsByClassName("line")[0];
+			var videoWrap = document.getElementById("video_wrap");
+			var videoPlayer = videoWrap.getElementsByClassName("video_player")[0];
+			var actionclose = videoWrap.getElementsByClassName("action_close")[0];
+			//初始动画
+			loadding(header,function(){
+				document.body.style.overflowY = "hidden";
+			})
+		
+			btnVideo.onclick = function(){
+				selet.style.display = "none";
+				main.style.background = "url(../img/bg_cenas.jpg) center top no-repeat";
+				videoPlayer.play();
+				videoWrap.style.display = "block";
+				actionclose.style.display = "block";
+			}
+			console.log(videoPlayer.preload);
+			
+			actionclose.onclick = function(){
+				videoPlayer.pause();
+				videoWrap.style.display = "none";
+				selet.style.display = "block";
+				actionclose.style.display = "none";
+			}
+			
+		</script>
+	</body>
+</html>
