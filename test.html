@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>001</li>
+			<li>002</li>
+			<li>003</li>
+			<li>004</li>
+			<li>005</li>
+		</ul>
+		<script>
+			var oUL = document.querySelector('ul');
+			var oLI = oUL.querySelectorAll('li');
+			
+			for(var i=0; i<oLI.length; i++){
+				(function(k){
+					oLI[k].onclick=function(){
+						alert(k)
+					}
+				})(i)
+			}
+//for(var i=0; i<oLI.length; i++){
+//	oLI[i].onclick=function(){
+//		alert(i)
+//	}
+//}
+
+
+		</script>
+	</body>
+</html>
